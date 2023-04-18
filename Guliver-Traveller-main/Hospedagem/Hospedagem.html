@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagem
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css"> 
+  </head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+<header>
+    <div class="guiliver">
+        <a href="#" class="logo"></a>
+        <img class="guiliver" src="img/logo.png" alt="">
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Buscar...">
+    </div>
+  </header>
+  <!-- SEÇÃO INÍCIO -->
+  <section class="inicio" id="inicio">
+      <div class="content">
+        <h1>Hospedagem</h1>
+      </div>
+      <div class="image-container">
+        <img src="img/imagem 1.jpg"Imagem de fundo dos prédios na Avenida Paulista, em São Paulo"> 
+      </div>
+  </section>
+    <!-- SEÇÃO FILTRO -->
+  <section>
+    <div class="filtro">
+        <form>
+            <label for="local">Local:</label>
+            <select name="local" id="local">
+              <option value="São Paulo">São Paulo</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Belo Horizonte">Belo Horizonte</option>
+            </select>
+            
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+            
+            <label for="quartos">Quartos:</label>
+            <input type="number" name="quartos" id="quartos" min="1" max="10">
+            
+            <label for="pessoas">Pessoas:</label>
+            <input type="number" name="pessoas" id="pessoas" min="1" max="20">
+            
+            <button type="submit">Buscar</button>
+          </form>
+    </div>
+  </section>
+  <!-- SEÇÃO HOTEL -->
+  <section class="hotel">
+      <div class="box-container">
+        <div class="box"> 
+          <img src="img/Hotel/Hotel 1.png" alt="Foto de um quarto com uma cama de casal em frente a uma televisão. Ao fundo, há paredes cor de creme e uma janela com vista para São Paulo" class="image">
+          <div class="content">
+            <h2 class="title">Lorem</h2>
+            <div class="estrelas"> 
+              <span class="review">4.7/5</span> 
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i> 
+              <i class="fas fa-star"></i> 
+              <i class="fa-regular fa-star-half-stroke"></i> 
+            </div>
+            <p>Lorem</p>
+            <a href="#"><button class="btn">Veja Mais</button></a>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
