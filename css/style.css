@@ -55,20 +55,23 @@ header {
   width: 40%;
 }
 
+#menu{
+  justify-content: space-between;
+}
+
 .header-menu{
-  position: absolute;
+  position: relative;
   top: 10px;
-  margin: 10px;
+  /*margin: 10%;*/
   font-size: 30px;
 }
 
 .header-menu ul {
-  width: 90%;
+  width: 40%;
   position: relative;
-  margin-left: 90%;
-  margin-top: 5px;
+  margin-left: -40%;
+  margin-top: 2px;
   display: flex;
-  justify-content: space-between;
 }
 
 .header-menu li {
@@ -78,8 +81,11 @@ header {
 }
 
 .menu-item{
-  width: 20%;
-  padding: 60px;
+  width: 30%;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .active-scroll a:hover{
