@@ -272,3 +272,9 @@ section {
 
   margin-top: 20px;
 }
+
+.preco {
+  background-color: rgb(147, 224, 144);
+  margin-top: 20px;
+  display: inline-flex;
+}
