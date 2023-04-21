@@ -47,8 +47,12 @@ header {
   z-index: 1;
 }
 
+#cabecalho{
+  justify-content: space-between;
+}
+
 .guiliver{
-  width: 100%;
+  width: 40%;
 }
 
 .header-menu{
@@ -64,7 +68,7 @@ header {
   margin-left: 90%;
   margin-top: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header-menu li {
@@ -86,17 +90,13 @@ header {
   background-color: #000;
 }
 
-.buscar {
-  position: relative;
-  margin-left: 1200px;
-  top: 45px;
-  color: #fff;
-  font-size: 18px;
+#pesquisa{
+  justify-content: space-between;
 }
 
 .buscar_input{
-  width: 30%;
-  margin-left: 1200px;
+  width: 90%;
+  /*margin-left: 50%;*/
   padding: 10px;
   position: relative;
   top: 40px;
@@ -108,11 +108,11 @@ header {
 
 .btn_pesquisa{
   padding: 8px, 16px, 8px, 16px;
-  width: 5%;
+  width: 25%;
   height: 48px;
   position: relative;
   bottom: 8px;
-  margin-left: 1750px;
+  margin-left: 100%;
   margin-bottom: 45px;
   border-radius: 8px;
   background-color: #fcd404;
