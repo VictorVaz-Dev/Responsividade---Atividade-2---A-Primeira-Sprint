@@ -40,6 +40,14 @@ body{
     width: 200px;
 }
 
+.active-scroll a:hover{
+    color: #fcd404;
+  }
+  
+  .active-scroll {
+    background-color: #000;
+  }
+
 ul,
 ol {
     list-style: none;
