@@ -1,159 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospedagem
-    </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css"> 
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospedagem
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
     <!-- CABEÇALHO -->
-<header id="cabecalho">
+<header>
     <div class="guiliver">
-        <a href="#index.html" class="logo" target="_blank">
+      <a href="#index.html" class="logo" target="_blank">
         <img class="guiliver" src="img/logo.png" alt=""></a>
     </div>
     <nav class="header-menu">
       <ul>
-          <li><a href="#recomendados" class="menu-item">Lugares</a></li>
-          <li><a href="#dicas" class="menu-item">Dicas</a></li>
-          <li><a href="#index.html" class="menu-item">Recomendados</a></li>
+        <li><a href="#recomendados" class="menu-item">Lugares</a></li>
+        <li><a href="#dicas" class="menu-item">Dicas</a></li>
+        <li><a href="#index.html" class="menu-item">Recomendados</a></li>
       </ul>
   </nav>
-  <form id="pesquisa" action=" " method="post">
+  <form action=" " method="post">
+    <label class="buscar" for="busca">Buscar</label>
     <input class="buscar_input" type="search" id="busca" name="q">
     <button class="btn_pesquisa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
   </form>
   </header>
   <!-- SEÇÃO INÍCIO -->
   <section class="inicio" id="inicio">
-      <div class="content">
-        <h1>Hospedagem</h1>
-      </div>
-      <div class="image-container">
-        <img src="img/imagem 1.jpg"Imagem de fundo dos prédios na Avenida Paulista, em São Paulo"> 
-      </div>
+    <div class="content">
+      <h1>Hospedagem</h1>
+    </div>
+    <div class="image-container">
+      <img src="img/imagem 1.jpg" Imagem de fundo dos prédios na Avenida Paulista, em São Paulo">
+    </div>
   </section>
 
   <!-- Opção de Viagem -->
 
   <fieldset class="escolha-viagem">
-        	
+
     <h2>Escolha o tipo de viagem</h2>
 
-            <!-- label for vincula a etiqueta ao id mais abaixo, e o name vincula todos
+    <!-- label for vincula a etiqueta ao id mais abaixo, e o name vincula todos
             ao mesmo grupo para que quando clica em um, desmarca o outro -->
 
     <label for="radio-trabalho">
-    <input type ="radio" name="tipodeviagem" value="Trabalho"
-     id="radio-trabalho" checked>Trabalho</label> 
-            
-<label for="radio-ferias"><input type="radio" name="tipodeviagem" value="Férias" 
-    id="radio-ferias">Férias</label>  
-            
-    <label for="radio-ocasional">
-    <input type="radio" name="tipodeviagem" value="Ocasional"
-     id="radio-ocasional">Ocasional</label>
+      <input type="radio" name="tipodeviagem" value="Trabalho" id="radio-trabalho" checked>Trabalho</label>
 
-              
-</fieldset>
-    <!-- SEÇÃO FILTRO -->
+    <label for="radio-ferias"><input type="radio" name="tipodeviagem" value="Férias" id="radio-ferias">Férias</label>
+
+    <label for="radio-ocasional">
+      <input type="radio" name="tipodeviagem" value="Ocasional" id="radio-ocasional">Ocasional</label>
+
+
+  </fieldset>
+  <!-- SEÇÃO FILTRO -->
   <section>
     <div class="filtro">
-        <form>
-            <label for="local">Local:</label>
-            <select name="local" id="local">
-              <option value="São Paulo">São Paulo</option>
-              <option value="Rio de Janeiro">Rio de Janeiro</option>
-              <option value="Belo Horizonte">Belo Horizonte</option>
-            </select>
-            
-            <label for="data">Data:</label>
-            <input type="date" name="data" id="data">
-            
-            <label for="quartos">Quartos:</label>
-            <input type="number" name="quartos" id="quartos" min="1" max="10">
-            
-            <label for="pessoas">Pessoas:</label>
-            <input type="number" name="pessoas" id="pessoas" min="1" max="20">
-            
-            <button type="submit">Buscar</button>
-          </form>
+      <form>
+        <label for="local">Local:</label>
+        <select name="local" id="local">
+          <option value="São Paulo">São Paulo</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Belo Horizonte">Belo Horizonte</option>
+        </select>
+
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+
+        <label for="quartos">Quartos:</label>
+        <input type="number" name="quartos" id="quartos" min="1" max="10">
+
+        <label for="pessoas">Pessoas:</label>
+        <input type="number" name="pessoas" id="pessoas" min="1" max="20">
+
+        <button type="submit">Buscar</button>
+      </form>
     </div>
   </section>
-  <!-- SEÇÃO HOTEL  --> 
+  <!-- SEÇÃO HOTEL  -->
   <!-- hotel 1 -->
   <section class="hotel">
-      <div class="box-container">
-        <div class="box"> 
-          <img src="img/Hotel/Hotel 1.png" alt="Foto de um quarto com uma cama de casal em frente a uma televisão. Ao fundo, há paredes cor de creme e uma janela com vista para São Paulo" class="image">
-          <div class="content">
-            <h2 class="title">Hotel Mercure São Paulo Jardins</h2>
-            <div class="estrelas"> 
-              <span class="review">4.7/5</span> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fa-regular fa-star-half-stroke"></i> 
-            </div>
-            <p>Localizado a 3,1km do Parque do Ibirapuera.</p>
-            <p class="preco"> Diárias de R$ 250,00 a R$ 500,00</p>
-            <h3 class="indisponivel">Indisponivel para esta data</h3>
+    <div class="box-container">
+      <div class="box">
+        <img src="img/Hotel/Hotel 1.png"
+          alt="Foto de um quarto com uma cama de casal em frente a uma televisão. Ao fundo, há paredes cor de creme e uma janela com vista para São Paulo"
+          class="image">
+        <div class="content">
+          <h2 class="title">Hotel Mercure São Paulo Jardins</h2>
+          <div class="estrelas">
+            <span class="review">4.7/5</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <p>Localizado a 3,1km do Parque do Ibirapuera.</p>
+          <p class="preco"> Diárias de R$ 250,00 a R$ 500,00</p>
+          <h3 class="indisponivel">Indisponivel para esta data</h3>
 
-            <div class="recomendacoes">
+          <div class="recomendacoes">
             <h2>Descrição</h2>
             <p> Quarto com cama de casal queen size, ducha, TV a cabo, wi-fi de alta velocidade, mesa de trabalho,
               frigobar, opção de almofadas
             </p>
             <a href="#"><button class="btn">Localização</button></a>
-               
-            </div>        
+
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!-- hotel 2 -->
+    <!-- hotel 2 -->
 
-      <div class="box-container">
-        <div class="box"> 
-          <img src="img/Hotel/Hotel 2.jpg" alt="Foto do Hotel Bourbon, frente para rua" class="image">
-          <div class="content">
-            <h2 class="title">Bourbon São Paulo Ibirapuera Convention Hotel</h2>
-              <div class="estrelas"> 
-              <span class="review">5.0/5</span> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fa-regular fa-star-stroke"></i> 
-            </div>
-            <p>Localizado a 100m do Shopping Ibirapuera.</p>
+    <div class="box-container">
+      <div class="box">
+        <img src="img/Hotel/Hotel 2.jpg" alt="Foto do Hotel Bourbon, frente para rua" class="image">
+        <div class="content">
+          <h2 class="title">Bourbon São Paulo Ibirapuera Convention Hotel</h2>
+          <div class="estrelas">
+            <span class="review">5.0/5</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star-stroke"></i>
+          </div>
+          <p>Localizado a 100m do Shopping Ibirapuera.</p>
 
-            <p class="preco"> Diárias de R$ 250,00 a R$ 500,00</p>
-            <h3 class="indisponivel">Indisponivel para esta data</h3>
+          <p class="preco"> Diárias de R$ 250,00 a R$ 500,00</p>
+          <h3 class="indisponivel">Indisponivel para esta data</h3>
 
-            <div class="recomendacoes">
+          <div class="recomendacoes">
             <h2>Descrição</h2>
             <p> Quarto com cama de casal queen size, ducha, TV a cabo, wi-fi de alta velocidade, mesa de trabalho,
               frigobar, opção de almofadas
             </p>
 
             <label for="modalexemplo" class="btn">Localização</label>
-            <input type ="checkbox" id="modalexemplo" class="checkboxmodal">
-              
-              <div class="modal"> 
+            <input type="checkbox" id="modalexemplo" class="checkboxmodal">
+
+            <div class="modal">
               <label for="modalexemplo" class="fecharmodal">X</label>
-                <div class="conteudomodal">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2148623397666!2d-46.6658838252501!3d-23.560725461567753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2505a7d1b%3A0x25e5530123a865cf!2sMercure%20S%C3%A3o%20Paulo%20Jardins!5e0!3m2!1spt-BR!2sbr!4v1681595726115!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>  
-              </div> 
+              <div class="conteudomodal">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2148623397666!2d-46.6658838252501!3d-23.560725461567753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2505a7d1b%3A0x25e5530123a865cf!2sMercure%20S%C3%A3o%20Paulo%20Jardins!5e0!3m2!1spt-BR!2sbr!4v1681595726115!5m2!1spt-BR!2sbr"
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <label for="modalexemplo" class="btn">Deixe seu comentário</label>
+            <input type="checkbox" id="modalexemplo" class="checkboxmodal">
+
+            <div class="modal">
+              <label for="modalexemplo" class="fecharmodal">X</label>
+              <div class="conteudomodal">
+                <form>
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" required>
+
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="comentario">Comentário:</label>
+                  <textarea id="comentario" name="comentario" required></textarea>
+
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+
 
           </div>
         </div>
@@ -162,19 +190,21 @@
       <!-- hotel 3 -->
       <!-- testando commit -->
 
-       
+
       <div class="box-container">
-        <div class="box"> 
-          <img src="img/Hotel/Hotel 3.jpg" alt="Foto do Hotel Tianon um quarto com uma cama de casal em frente a uma televisão. Ao fundo, há paredes cor de creme e uma janela com vista para São Paulo" class="image">
+        <div class="box">
+          <img src="img/Hotel/Hotel 3.jpg"
+            alt="Foto do Hotel Tianon um quarto com uma cama de casal em frente a uma televisão. Ao fundo, há paredes cor de creme e uma janela com vista para São Paulo"
+            class="image">
           <div class="content">
             <h2 class="title">Hotel Trianon Paulista</h2>
-              <div class="estrelas"> 
+            <div class="estrelas">
               <span class="review">4.5/5</span>
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fas fa-star"></i> 
-              <i class="fa-regular fa-star-half-stroke"></i> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
             </div>
             <p>Localizado a 2 quarteirões do MASP.</p>
 
@@ -182,21 +212,22 @@
             <h3 class="indisponivel">Indisponivel para esta data</h3>
 
             <div class="recomendacoes">
-            <h2>Descrição</h2>
-            <p> Quarto com cama de casal queen size, ducha, TV a cabo, wi-fi de alta velocidade, mesa de trabalho,
-              frigobar, opção de almofadas</p>
+              <h2>Descrição</h2>
+              <p> Quarto com cama de casal queen size, ducha, TV a cabo, wi-fi de alta velocidade, mesa de trabalho,
+                frigobar, opção de almofadas</p>
 
-            <a href="#"><button class="btn">Localização</button></a>
+              <a href="#"><button class="btn">Localização</button></a>
+            </div>
           </div>
         </div>
-      </div>    
 
-             
-    </section>
 
-    <!--Scroll Javasprit-->
+  </section>
 
-    <script src="./js/scroll.js"></script>
+  <!--Scroll Javasprit-->
+
+  <script src="./js/scroll.js"></script>
 
 </body>
+
 </html>
