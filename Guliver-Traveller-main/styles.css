@@ -16,9 +16,23 @@ html {
     --color-yellow:#fcd404
 }
 
+.header-page {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 body{
     width: 99vw;
     height: 90vmin;
+    color: #000;
 }
 
 
@@ -29,6 +43,7 @@ body{
 }
 
 .header-menu ul {
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -44,7 +59,7 @@ body{
     color: #fcd404;
   }
   
-  .active-scroll {
+.active-scroll {
     background-color: #000;
   }
 
