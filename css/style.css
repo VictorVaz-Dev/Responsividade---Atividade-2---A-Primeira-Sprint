@@ -50,10 +50,13 @@ header {
 #escolha-principal{
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  
 }
 
 .filtro{
-  display: inline-block;
+  width: 100%;
+  display: inline;
   margin: 10px;
   padding: .4rem 2rem; 
   background-color: yellow;
@@ -63,13 +66,18 @@ header {
   border: .2rem solid #fcd404;;
   margin-top: 1.4rem;
   font-size: 1.8rem;
-  width: 68rem;
+  width: 10rem;
   text-transform: capitalize;
   font-weight: bold;  
 }
 
+.filtro button{
+  border-radius: 10%;
+}
+
 .escolha-viagem{
   padding-left: 10px;
+  width: 100%;
 }
 
 .escolha-viagem h1{
@@ -149,6 +157,16 @@ header {
   padding: 20px;
   z-index: 999;
 }
+
+@media (max-width: 768px) {
+  #formulario-comentario, #formulario-comentario1, #formulario-comentario3 {
+    top: 20%; 
+    left: 10%;
+    transform: none;
+    width: 90%; 
+  }
+}
+
 
 #formulario-comentario:target, #formulario-comentario1:target, #formulario-comentario3:target {
   display: block;
