@@ -8,17 +8,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-<header class="header-page">
-    <nav class="header-menu">
-        <ul>
-            <li><a  class="menu-item"><img src="Img/logo.png" alt="Logo"></a></li>
-            <li><a href="#recomendados" class="menu-item">Lugares</a></li>
-            <li><a href="#dicas" class="menu-item">Hospedagem</a></li>
-            <li><a href="#reviews" class="menu-item">Recomendações</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- começo menu -->
+    <header class="header-page">
+        <div class="container"> 
+            <nav class="navbar">
+              <a class="nav-branding"><img src="img/logo.png" alt="Logo"></a>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#recomendados" class="nav-link">Lugares</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#dicas" class="nav-link">Hospedagem</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#reviews" class="nav-link">Recomendações</a>
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+         </div>
+       </header>
+<!-- fim menu -->
+
     <div class="imagem_viajante">
         <img class="logo" src="Img/logo.png" alt="Logo">
     </div>
@@ -128,6 +143,7 @@
 </main>
 
 <script src="./scroll.js"></script>
+<script src="./js/menu.js"></script>
 
 </body>
 </html>
