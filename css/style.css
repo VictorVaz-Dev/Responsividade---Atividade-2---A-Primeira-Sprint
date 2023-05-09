@@ -34,19 +34,97 @@ body {
 
 /* fim configuracao basica */
 
-/* Cabecalho */
-header {
+/* começo do menu */
+
+header{
+  background-color: #000;
+}
+
+.header-page {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navbar{
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8%;
-  z-index: 1;
 }
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-branding img{
+  width: 100px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link{
+  transition: 0.3s ease-out;
+}
+
+.nav-link:hover{
+  color: orange;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.active-scroll a:hover{
+  color: #fcd404;
+}
+
+.active-scroll {
+  background-color: #000;
+}
+
+/* fim do menu */
+
+
 
 #escolha-principal {
   display: flex;
@@ -109,46 +187,6 @@ header {
   display: inline;
 }
 
-#cabecalho {
-  justify-content: space-between;
-}
-
-.guiliver {
-  width: 40%;
-}
-
-#menu {
-  justify-content: space-between;
-}
-
-.header-menu {
-  position: relative;
-  top: 10px;
-  /*margin: 10%;*/
-  font-size: 30px;
-}
-
-.header-menu ul {
-  width: 40%;
-  position: relative;
-  margin-left: -10%;
-  margin-top: 2px;
-  display: flex;
-}
-
-.header-menu li {
-  font-size: 30px;
-  letter-spacing: 1px;
-  width: 70%;
-}
-
-.menu-item {
-  width: 30%;
-  padding: 50px;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
 
 #formulario-comentario,
 #formulario-comentario1,
@@ -191,41 +229,8 @@ header {
   color: black;
 }
 
-.active-scroll a:hover {
-  color: #fcd404;
-}
-
-.active-scroll {
-  background-color: #000;
-}
-
-#pesquisa {
-  justify-content: space-between;
-}
-
-.buscar_input {
-  width: 90%;
-  margin-left: 50%;
-  padding: 10px;
-  position: relative;
-  top: 40px;
-  align-items: center;
-  text-align: center;
-  border-radius: 8px;
-}
 
 
-.btn_pesquisa {
-  padding: 8px, 16px, 8px, 16px;
-  width: 25%;
-  height: 48px;
-  position: relative;
-  bottom: 8px;
-  margin-left: 130%;
-  margin-bottom: 45px;
-  border-radius: 8px;
-  background-color: #fcd404;
-}
 
 .btn-comentario:hover {
   background-color: #50638d;
@@ -246,24 +251,6 @@ header {
   text-transform: capitalize;
   color: #000;
 }
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  transition: 0.5s;
-}
-
-a:hover {
-  color: orange;
-}
-
-/* Fim Cabecalho */
 
 section {
   padding: 2rem 5%;
@@ -377,6 +364,47 @@ section {
 
 .hotel .box-container .content .btn:hover {
   background: #50638d;
+}
+
+@media(max-width:1024px) {
+  .hamburger {
+  display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  }
+
+  .nav-item {
+  margin: 16px 0;
+  }
+
+  .nav-menu.active {
+  left: 0;
+  }
+
+  /* fim sessao menu */
+
 }
 
 @media (max-width:1200px) {
